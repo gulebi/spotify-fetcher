@@ -1,14 +1,12 @@
 # Spotify Parser
 
-Spotify Parser is an npm package designed to help you extract and parse data from Spotify. Whether you need to retrieve information about tracks, albums, artists, or playlists, this package provides a simple and efficient way to interact with the Spotify API.
+Spotify Parser is a npm package that allows you to easily get data from Spotify. It can fetch track and playlist data. It converts the input link to an embed, parses it and outputs the data back.
 
 ## Features
 
--   Retrieve track information
+-   Fetch track information
 -   Fetch album details
--   Get artist data
--   Access playlist contents
--   Easy-to-use API
+-   No need to login
 
 ## Installation
 

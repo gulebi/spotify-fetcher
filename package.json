@@ -1,13 +1,20 @@
 {
     "name": "spotify-parser",
     "version": "1.0.0",
-    "description": "Spotify Parser",
+    "description": "Library for easy Spotify parsing without login",
+    "keywords": [
+        "spotify",
+        "parser",
+        "spotify-uri",
+        "spotify-parser"
+    ],
     "main": "dist/index.js",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "dev": "nodemon ./src/index.ts",
         "build": "rimraf dist && tsup ./src/index.ts --dts",
+        "publish": "pnpm run build && pnpm publish",
         "test": "jest"
     },
     "files": [
@@ -36,5 +43,6 @@
         "ts-node": "^10.9.2",
         "tsup": "^8.3.6",
         "typescript": "^5.7.3"
-    }
+    },
+    "packageManager": "pnpm@8.6.0"
 }
