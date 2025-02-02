@@ -19,14 +19,16 @@ npm install spotify-parser
 ```javascript
 const SpotifyParser = require("spotify-parser");
 
-// Example usage
-SpotifyParser.getTrack("trackId")
-    .then((track) => {
-        console.log(track);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+const spotifyParser = new SpotifyParser();
+
+async function parseSpotifyData(url) {
+    const parsedData = await spotifyParser.track(url);
+    console.log(parsedData);
+}
+
+const spotifyUrl = "https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC";
+
+parseSpotifyData(spotifyUrl);
 ```
 
 ## License
