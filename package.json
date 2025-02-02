@@ -1,6 +1,6 @@
 {
     "name": "spotify-parser",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Library for easy Spotify parsing without login",
     "keywords": [
         "spotify",
@@ -14,7 +14,7 @@
     "scripts": {
         "dev": "nodemon ./src/index.ts",
         "build": "rimraf dist && tsup",
-        "publish": "pnpm run build && pnpm publish",
+        "publish": "npm run build && npm publish",
         "test": "jest"
     },
     "files": [
@@ -38,12 +38,13 @@
     "license": "MIT",
     "dependencies": {
         "html5parser": "^2.0.2",
-        "node-fetch": "^3.3.2",
+        "node-fetch": "^2.7.0",
         "spotify-uri": "^4.1.0"
     },
     "devDependencies": {
         "@types/jest": "^29.5.14",
         "@types/node": "^22.12.0",
+        "@types/node-fetch": "^2.6.12",
         "jest": "^29.7.0",
         "nodemon": "^3.1.9",
         "rimraf": "^6.0.1",
