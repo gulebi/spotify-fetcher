@@ -1,10 +1,10 @@
-import SpotifyFetcher from "../src/index";
+import SpotifyParser from "../src/index";
 
 describe("SpotifyFetcher", () => {
-    let fetcher: SpotifyFetcher;
+    let fetcher: SpotifyParser;
 
     beforeAll(() => {
-        fetcher = new SpotifyFetcher();
+        fetcher = new SpotifyParser();
     });
 
     test("should fetch track info", async () => {

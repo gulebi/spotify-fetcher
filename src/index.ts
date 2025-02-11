@@ -3,7 +3,7 @@ import { formatEmbedURL } from "spotify-uri";
 import { SpotifyPlaylist, SpotifyTrack } from "./types";
 import fetch from "node-fetch";
 
-export default class SpotifyFetcher {
+export default class SpotifyParser {
     private async getInfo<T = any>(url: string): Promise<T> {
         const embedURL = formatEmbedURL(url);
 
