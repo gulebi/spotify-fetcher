@@ -1,6 +1,6 @@
-# Spotify Parser
+# Spotify Fetcher
 
-Spotify Parser is a npm package that allows you to easily get data from Spotify. It can fetch track and playlist data. It converts the input link to an embed, parses it and outputs the data back.
+Spotify Fetcher is a npm package that allows you to easily get data from Spotify. It can fetch track and playlist data. It converts the input link to an embed, fetches it and outputs the data back.
 
 ## Features
 
@@ -11,24 +11,24 @@ Spotify Parser is a npm package that allows you to easily get data from Spotify.
 ## Installation
 
 ```bash
-npm install spotify-parser
+npm install spotify-fetcher
 ```
 
 ## Usage
 
 ```javascript
-const SpotifyParser = require("spotify-parser");
+const SpotifyFetcher = require("spotify-fetcher");
 
-const spotifyParser = new SpotifyParser();
+const spotifyFetcher = new SpotifyFetcher();
 
-async function parseSpotifyData(url) {
-    const parsedData = await spotifyParser.track(url);
-    console.log(parsedData);
+async function fetchSpotifyData(url) {
+    const fetchedData = await spotifyFetcher.track(url);
+    console.log(fetchedData);
 }
 
 const spotifyUrl = "https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC";
 
-parseSpotifyData(spotifyUrl);
+fetchSpotifyData(spotifyUrl);
 ```
 
 ## License
